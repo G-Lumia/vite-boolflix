@@ -34,6 +34,10 @@ Milestone 3
 bonus idea 3 :
 Generare una lista delle Serie Tv tratte da Manga, Sitcom, Film ed una lista casuale
 
+bonus idea 3.5:
+Invece di presentare la lista per intero, usare un carosello
+
+
 Milestone 4
 - Implementare la barra di ricerca. Scrivendo all'interno di essa verranno
 visualizzati gli elementi con il nome corrispondente

@@ -1,0 +1,14 @@
+@use './partials/variables' as *;
+$fa-font-path: '../webfonts';
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import 'bootstrap/scss/bootstrap';
+@import '@fontsource/open-sans/index.css';
+@import '@fontsource/open-sans/300.css';
+@import '@fontsource/open-sans/500.css';
+@import '@fontsource/open-sans/700.css';
+
+body {
+    font-family: $main-font;
+    color: $text-color;
+}
