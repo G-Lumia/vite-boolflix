@@ -1,0 +1,51 @@
+Milestone 1 
+- Creare header con navbar, search bar , campanella notifiche e account
+
+bonus idea 1 : creare un dropout menu al click dell'icona dell'account
+
+Milestone 2
+- Creare una thumbnail di un film o serie tv generata tramite l'API
+
+Milestone 3
+- All'hover della thumbnail, questa aumenta di dimensione e
+diventa una card. Sotto all'immagine della card ci saranno un pulsante
+play, uno per aggiungere l'elemento ad una lista "La mia Lista",un pulsante
+"Mi piace" ed un pulsante "Episodi ed Info".
+Sotto ai pulsanti saranno presenti l'indice di gradimento dell'elemento,
+l'età consigliata, il numero di episodi e/o stagioni.
+Sotto saranno presenti 3 tag per descrivere brevemente l'elemento.
+
+bonus idea 2 :
+al click di Episodi ed Info la card ingrandisce nuovamente.
+Oltre agli elementi già presenti precedentemente, viene visualizzato 
+il cast, i vari generi, le caratteristiche ed una breve descrzione.
+
+bonus idea 2.5:
+Nel caso si tratti di una serie, viene visualizzata una lista degli episodi, con una
+thumbnail, titolo, durata e breve descrizione per ogni episodio.
+
+bonus idea 2.75:
+Nel caso fossero presenti più stagioni della stessa serie, creare una select con 
+le varie option per ogni stagione.
+
+Milestone 3
+- Generare una lista di card delle serie in evidenza
+
+bonus idea 3 :
+Generare una lista delle Serie Tv tratte da Manga, Sitcom, Film ed una lista casuale
+
+Milestone 4
+- Implementare la barra di ricerca. Scrivendo all'interno di essa verranno
+visualizzati gli elementi con il nome corrispondente
+
+bonus idea 4:
+La ricerca utilizzerà anche il nome degli attori, del regista e del genere
+
+Milestone 5
+- Creare un jumbotron della serie tv di punta  da posizionare appena sotto l'header.
+La thumbanil avrà una width pari al 100% dello schermo, il logo della serie,
+una breve descrizione e due pulsanti : Riproduci e Altre Info
+bonus idea 5: al click di "Altre Info" vedi bonus idea 2
+
+Milestone 6
+- All'hover delle card e del jumbotron, viene riprodotto il trailer dell'elemento
