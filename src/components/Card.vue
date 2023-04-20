@@ -51,10 +51,15 @@
         opacity:0;
         background-color: rgba(0, 0, 0, 0.75);
         color:white;
-        overflow: scroll;
+        overflow-y: scroll;
         &:hover{
             opacity: 1;
             transition:0.3s;
         }
     }
+
+    ::-webkit-scrollbar {
+        width: 1px;
+    }
+
 </style>
