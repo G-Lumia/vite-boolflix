@@ -10,12 +10,10 @@
                 {{element.original_title}}
                 {{ element.original_name }}
             </p>
-            <p>
-                {{element.original_language}}
-            </p>
-            <p>
-                {{element.vote_average}}
-            </p>
+            <span :class="'fi fi-' + element.original_language"></span>
+            <div class="d-flex my-2">
+                <img v-for="star in stars" src="../assets/img/svg/star.svg" alt="star">
+            </div>
             <p>
                 {{element.overview}}
             </p>
@@ -26,7 +24,17 @@
 <script>
         export default {
             name: 'Card',
-            props: ['element']
+            props: ['element'],
+            data(){
+                return{
+                    stars : this.toStars()
+                }
+            },
+            methods: {
+                toStars(){
+                    return Math.floor(this.element.vote_average / 2);
+                }
+            },
         }
 </script>
 
