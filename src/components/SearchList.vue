@@ -1,7 +1,7 @@
 <template>
     <main class="p-5 d-flex flex-wrap justify-content-center gap-5">
-        <Card v-for="(element) in store.filmsList" :element="element"/>
-        <Card v-for="(element) in store.seriesList" :element="element"/>
+        <Card v-for="(element) in store.filmsList" :element="element" />
+        <Card v-for="(element) in store.seriesList" :element="element" />
     </main>
 </template>
 
@@ -19,14 +19,18 @@ export default {
         }
     },
     methods: {
-
     }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     main{
         width:100%;
         background-color: #141414;
+        position:relative;
+    }
+
+    ::-webkit-scrollbar {
+        width: 1px;
     }
 </style>
