@@ -1,13 +1,12 @@
 <template>
-    <main class="container">
-        <div class="row">
-            <Card v-for="(element) in searchFilms.filmsList" :element="element"/>
-        </div>
+    <main class="p-5 d-flex flex-wrap justify-content-center gap-5">
+        <Card v-for="(element) in store.filmsList" :element="element"/>
+        <Card v-for="(element) in store.seriesList" :element="element"/>
     </main>
 </template>
 
 <script>
-import { searchFilms } from '../data/store/films';
+import { store } from '../data/store/store';
 import Card from './Card.vue';
 export default {
     name: 'SearchList',
@@ -16,7 +15,7 @@ export default {
     },
     data() {
         return {
-            searchFilms
+            store
         }
     },
     methods: {
@@ -25,4 +24,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+    main{
+        width:100%;
+    }
+</style>

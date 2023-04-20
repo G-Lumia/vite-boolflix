@@ -15,7 +15,7 @@
                 </div>
                 <div class="d-flex justify-content-between gap-2" >
                     <img src="../assets/img/svg/magnifying-glass-svgrepo-com.svg" alt="glass">
-                    <input class="form-control" type="search" v-model="searchFilms.endpoint">
+                    <input class="form-control" type="search" v-model="store.endpoint">
                     <button class="btn">
                         <img src="../assets/img/svg/send-message-svgrepo-com.svg" alt="send" @click="$emit('search')">
                     </button>
@@ -25,12 +25,12 @@
     </header>
 </template>
 <script>
-import { searchFilms } from '../data/store/films';
+import { store } from '../data/store/store';
 export default {
     name : 'HeaderComponent',
     data() {
         return {
-            searchFilms
+            store
         }
     }
 }

@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import { searchFilms } from '../data/store/films';
+import { store } from '../data/store/store';
 import axios from 'axios';
 import HeaderComponent from './HeaderComponent.vue';
 import SearchList from './SearchList.vue';
@@ -16,16 +16,20 @@ export default {
     },
     data() {
         return {
-            searchFilms
+            store
         }
     },
     methods: {
         getCards() {
-        var url = searchFilms.baseUrl + searchFilms.endpoint;
-        axios.get(url).then((res) => {
-            searchFilms.filmsList = res.data.results;
-            console.log(res.data.results)
-            });
+            var urlFilm = store.filmUrl + store.endpoint;
+            axios.get(urlFilm).then((res) => {
+                store.filmsList = res.data.results;
+                });
+            var urlSeries = store.seriesUrl + store.endpoint;
+            axios.get(urlSeries).then((res) => {
+                store.seriesList = res.data.results;
+                console.log(res.data.results)
+                });
         }
     },
     mounted(){
