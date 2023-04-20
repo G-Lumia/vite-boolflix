@@ -3,19 +3,26 @@
         <img class="poster img-fluid" :src="'https://image.tmdb.org/t/p/w342/' + element.poster_path"  :alt="element.original_name">
         <div class="overview d-flex flex-column p-3">
             <p>
+                Titolo: <br>
                 {{element.title}}
                 {{element.name}}
             </p>
             <p>
+                Titolo originale: <br>
                 {{element.original_title}}
                 {{ element.original_name }}
             </p>
             <span :class="'fi fi-' + element.original_language"></span>
-            <div class="d-flex my-2">
-                <img v-for="star in stars" src="../assets/img/svg/star.svg" alt="star">
+            <div class="vote d-flex align-items-center">
+                <p>
+                    Voto :
+                </p>
+                <div class="d-flex gap-2 my-2">
+                    <img v-for="star in stars" src="../assets/img/svg/star.svg" alt="star">
+                </div>
             </div>
-            <p>
-                {{element.overview}}
+            <p v-if="element.overview.length != 0">
+                Descrizione: <br> {{element.overview}}
             </p>
         </div>
     </div>
@@ -66,6 +73,9 @@
         }
     }
 
+    .vote p{
+        margin:0;
+    }
     ::-webkit-scrollbar {
         width: 1px;
     }
